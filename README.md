@@ -52,7 +52,7 @@ Now Add these style to your MainActivity through ```AndroidManifest.xml```. Add 
 ```
 <activity android:name=".MainActivity" android:theme="@style/AppTheme.NoActionBar">
 ```
-Now, Move to the ```MainActivity.java``` code to add the navigation drawer to your app.
+Now, Move to the <a href="https://github.com/Vijay-Tahelramani/Android_Navigation_Drawer/blob/master/NavigationDrawer/app/src/main/java/com/example/navigationdrawer/MainActivity.java">```MainActivity.java```</a> code to add the navigation drawer to your app.<br/>
 First, create the instance of drawer_layout, navigationView and tool bar. To create instance of Navigationiew class will implement the ```NavigationView.OnNavigationItemSelectedListener``` and override it's method. Here It has a method ```onNavigationItemSelected()```. Then we need to configure the AppBar using the ```ActionBarDrawerToggle```, add the following code to your ```onCreate()``` method.
 ```
 drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
@@ -69,7 +69,7 @@ toggle.syncState();
 
 Then when your Navigation Drawer is open and back button is pressed the drawer should be closed inted of closing the activity.
 For that override the ```OnBackPressed()``` method.
-Add the following method. in your ```MainAcivity.java```
+Add the following method in your <a href="https://github.com/Vijay-Tahelramani/Android_Navigation_Drawer/blob/master/NavigationDrawer/app/src/main/java/com/example/navigationdrawer/MainActivity.java">```MainAcivity.java```</a>.
 ```
 @Override
 public void onBackPressed() {
