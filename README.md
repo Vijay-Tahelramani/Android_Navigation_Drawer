@@ -85,4 +85,5 @@ Action's for the menu items will be created inside ```onNavigationItemSelected()
 
 Now run the project and you will see your drawer layout working.
 
-Screen Preview:
+Screen Preview:<br/>
+<img src="https://github.com/Vijay-Tahelramani/Android_Navigation_Drawer/blob/master/Images/sidemenu.png" width="250" />
