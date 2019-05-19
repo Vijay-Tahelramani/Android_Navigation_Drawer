@@ -7,16 +7,18 @@ To add navigation drawer in application, it requires to add following library to
 ```
 implementation 'com.android.support:design:28.0.0'
 ```
-Now, Change your the layout of ```acitivity_main.xml``` to the the drawer layout, and add the following lines of code to drawer layout.
+Now, Change your the layout of <a href="https://github.com/Vijay-Tahelramani/Android_Navigation_Drawer/blob/master/NavigationDrawer/app/src/main/res/layout/activity_main.xml">```acitivity_main.xml```</a> to the the drawer layout, and add the following lines of code to drawer layout.
+
 ```
 android:id="@+id/drawer_layout"
 android:fitsSystemWindows="true"
 tools:openDrawer="start"
 ```
+
 Using only drawer layout, we can get the Navigation Drawer in project.
 The Activity with the drawer layout contains The Layout for Main Acitivty Content, the navigation view and toolbar. It is required to create the toolbar for the Navigation Drawer, because Default app toolbar does not support the Navigation Drawer.
 Navigation Drawer is created using NavigationView.
-So see the code of ```activity_main.xml``` copy it in your xml file.
+So see the code of <a href="https://github.com/Vijay-Tahelramani/Android_Navigation_Drawer/blob/master/NavigationDrawer/app/src/main/res/layout/activity_main.xml">```activity_main.xml```</a> copy it in your xml file.
 
 Here in Navigation View we can add the content using menu and header layout. Using below code that I have added in my navigation View.
 ```
@@ -24,11 +26,11 @@ app:headerLayout="@layout/nav_header_main"
 app:menu="@menu/activity_main_drawer"
 ```
 
-To add the content to Navigation View, create menu file and put all the items you want. See the code of ```activity_main_drawer.xml```, I have created group of items so that user it stays only on item selected at a time.
+To add the content to Navigation View, create menu file and put all the items you want. See the code of <a href="https://github.com/Vijay-Tahelramani/Android_Navigation_Drawer/blob/master/NavigationDrawer/app/src/main/res/menu/activity_main_drawer.xml">```activity_main_drawer.xml```</a>, I have created group of items so that user it stays only on item selected at a time.
 
-To add the header layout create new layout file and place all the content you want to add in your drawer. I have created ```nav_header_main.xml``` file.
+To add the header layout create new layout file and place all the content you want to add in your drawer. I have created <a href="https://github.com/Vijay-Tahelramani/Android_Navigation_Drawer/blob/master/NavigationDrawer/app/src/main/res/layout/nav_header_main.xml">```nav_header_main.xml```</a> file.
 
-Now, we also need to remove the Default app toolbar from our activity so we need to change the Style of our Activity. So open the styles.xml from res>values>styles.xml folder. Keep the default style as it is and create new style for the activity just below the default acitivty add following code to your ```styles.xml```.
+Now, we also need to remove the Default app toolbar from our activity so we need to change the Style of our Activity. So open the styles.xml from res>values>styles.xml folder. Keep the default style as it is and create new style for the activity just below the default acitivty add following code to your <a href="https://github.com/Vijay-Tahelramani/Android_Navigation_Drawer/blob/master/NavigationDrawer/app/src/main/res/values/styles.xml">```styles.xml```</a>.
 ```
 <style name="AppTheme.NoActionBar">
      <item name="windowActionBar">false</item>
@@ -37,7 +39,7 @@ Now, we also need to remove the Default app toolbar from our activity so we need
  ```
  
  For your application's version 21 or above we can put the status bar color transparent when the drawer is open. To do that create new styles.xml with version specified to 21.
- Add the following code to your ```styles.xnl(v21)``` file.
+ Add the following code to your <a href="https://github.com/Vijay-Tahelramani/Android_Navigation_Drawer/blob/master/NavigationDrawer/app/src/main/res/values-v21/styles.xml">```styles.xml(v21)```</a> file.
  ```
  <?xml version="1.0" encoding="utf-8"?>
 <resources>
@@ -48,7 +50,7 @@ Now, we also need to remove the Default app toolbar from our activity so we need
     </style>
 </resources>
 ```
-Now Add these style to your MainActivity through ```AndroidManifest.xml```. Add the following dode to your Activity tag.
+Now Add these style to your MainActivity through <a href="https://github.com/Vijay-Tahelramani/Android_Navigation_Drawer/blob/master/NavigationDrawer/app/src/main/AndroidManifest.xml">```AndroidManifest.xml```</a>. Add the following dode to your Activity tag.
 ```
 <activity android:name=".MainActivity" android:theme="@style/AppTheme.NoActionBar">
 ```
